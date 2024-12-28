@@ -1,0 +1,26 @@
+# node.js
+node_modules/
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+
+# os
+.DS_Store
+Thumbs.debug
+
+# ide
+.vscode
+.idea
+*.iml
+
+# builds
+dist/
+
+# go
+**/*.exe
+**/*.dll
+**/*.mod
+**/*.sum
