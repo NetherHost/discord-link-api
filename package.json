@@ -1,17 +1,21 @@
 {
   "name": "netherhost-discord-link",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prisma:generate": "prisma generate",
+    "start": "prisma generate && node src/server.js"
   },
   "keywords": [],
   "author": "maybeizen",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.1.0",
     "axios": "^1.7.9",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.7",
