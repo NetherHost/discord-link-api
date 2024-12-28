@@ -24,3 +24,5 @@ dist/
 **/*.dll
 **/*.mod
 **/*.sum
+
+test.js

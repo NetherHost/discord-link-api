@@ -8,14 +8,16 @@ class UserService {
           has_bought_before: true,
         },
         select: {
-          user_id: true,
+          id: true,
           email: true,
           has_bought_before: true,
-          discord_id: true,
         },
       });
 
-      return clientUsers;
+      return clientUsers.map((user) => ({
+        ...user,
+        random_number: Math.floor(Math.random() * 100), // placeholder for discor ids once ago stops being fucking stupid and integrates discord
+      }));
     } catch (error) {
       console.error('Error fetching client users:', error);
       throw error;
